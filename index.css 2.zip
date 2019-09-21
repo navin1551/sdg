@@ -1,0 +1,130 @@
+.accordion {
+  background-color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border-bottom: 1px solid black;
+  outline: none;
+  transition: 0.4s;
+  font-weight: bold;
+}
+
+.accordion:after {
+  content: "\002B";
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  overflow: hidden;
+}
+
+#material-percentages {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#cashmere,
+#wool,
+#modal {
+  margin-top: 0%;
+  font-size: 20px;
+  font-family: "Open Sans";
+}
+
+#cashmere-perc,
+#wool-perc,
+#modal-perc {
+  margin-bottom: 0%;
+  font-size: 46px;
+}
+
+.text-area {
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+}
+
+#text {
+  font-family: "Open Sans";
+}
+
+@media screen and (min-width: 767px) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .text-area {
+    width: 800px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    font-family: Open sans Bold;
+  }
+
+  .accordion {
+    border: 1px solid black;
+    background-color: white;
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 8px;
+  }
+
+  .accordion:after {
+    content: none;
+  }
+
+  #material-percentages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 40px;
+  }
+
+  #cashmere,
+  #wool,
+  #modal {
+    margin-top: 0%;
+    font-size: 24px;
+  }
+
+  #cashmere-perc,
+  #wool-perc,
+  #modal-perc {
+    margin-bottom: 0%;
+    font-size: 50px;
+  }
+
+  .materials {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+  }
+
+  #text {
+    font-size: 18px;
+  }
+
+  #fit-guide-button:focus,
+  #care-button:focus,
+  #materials-button:focus {
+    background-color: black;
+    color: white;
+  }
+}
